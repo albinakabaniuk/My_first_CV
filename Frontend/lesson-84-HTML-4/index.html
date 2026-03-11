@@ -1,0 +1,45 @@
+<section>
+    <h2>Student Registration Form</h2>
+
+    <form action="http://localhost:8080/students/sign-up" method="POST">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullName" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age"><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+
+        <label>Interests:</label>
+        <input type="checkbox" name="interests" value="sports"> Sports
+        <input type="checkbox" name="interests" value="music"> Music
+        <input type="checkbox" name="interests" value="reading"> Reading<br><br>
+
+        <label>Country:</label><br>
+        <select name="country">
+            <option value="ukraine">Ukraine</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+        </select><br><br>
+
+        <label>Short Bio:</label><br>
+        <textarea name="bio"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>

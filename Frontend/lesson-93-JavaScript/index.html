@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вгадай число</title>
+</head>
+<body>
+
+<script>
+    const target = Math.floor(Math.random() * 10);
+    let guessed = false;
+
+    while (!guessed) {
+        let input = prompt("Вгадай число від 0 до 9:");
+        let number = parseInt(input);
+
+        if (isNaN(number)) {
+            alert("Введи коректне число!");
+            continue;
+        }
+
+        if (number === target) {
+            alert("🎉 Вітаю! Ти вгадав число!");
+            guessed = true;
+        } else if (number < target) {
+            alert("Більше 📈");
+        } else {
+            alert("Менше 📉");
+        }
+    }
+</script>
+
+</body>
+</html>
